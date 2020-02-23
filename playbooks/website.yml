@@ -21,6 +21,10 @@
             shell: docker pull docker.io/pigstah/flask:{{ BUILD_VERSION }}
             when: BUILD_UPDATE
 
+          - name: Stop Running Container
+            shell: docker stop {{ container_name }}
+            when: BUILD_UPDATE
+
           - name: Remove Current Container
             shell: docker rm {{ container_name }}
             when: BUILD_UPDATE
