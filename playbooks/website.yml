@@ -1,9 +1,8 @@
 ---
 - hosts: "178.62.41.212"
   remote_user: mattp
-  become: true
 
-  var_files:
+  vars_files:
           - var_secret.yml
           - var_public.yml
 
