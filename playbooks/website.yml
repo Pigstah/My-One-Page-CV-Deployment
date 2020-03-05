@@ -33,4 +33,4 @@
             shell: docker run -it -d -p 5000:5000 --name {{ container_name }} --network={{ container_network }} --restart=always docker.io/pigstah/flask:{{ BUILD_VERSION }}
             
           - name: Run Docker Container
-            shell: docker run -v /etc/letsencrypt/live/matthewpigram.co.uk:/matt_web_cv/etc/ssl/
+            shell: docker run -v /etc/letsencrypt/live/matthewpigram.co.uk:/matt_web_cv/etc/ssl/ -d {{ container-name }}
