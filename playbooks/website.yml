@@ -1,5 +1,5 @@
 ---
-- hosts: "178.62.41.212"
+- hosts: "{{ my_droplet_ip"
   remote_user: mattp
 
   vars_files:
