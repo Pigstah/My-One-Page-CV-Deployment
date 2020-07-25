@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ my_droplet_ip"
+- hosts: "{{ my_droplet_ip }}"
   remote_user: mattp
 
   vars_files:
