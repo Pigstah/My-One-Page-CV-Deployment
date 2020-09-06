@@ -16,11 +16,11 @@ ansible-playbook - [SERVER-IP/NAME-HERE], [PLAYBOOK-NAME].yml -e BUILD_VERSION=v
 
 ## Run Playbooks For 1st Build
 
-- ansible-playbook -i 178.62.41.212, website.yml -e BUILD_VERSION=v1 -e BUILD_UPDATE=false -vvv
+- ansible-playbook -i my_droplet_ip, website.yml -e BUILD_VERSION=v1 -e BUILD_UPDATE=false -vvv
 
 ## Run Playbooks For Update
 
 This will stop the current container and pull a new version and deploy as new container.
 
-- ansible-playbook -i 178.62.41.212, website.yml -e BUILD_VERSION=v1 -e BUILD_UPDATE=true -vvv
+- ansible-playbook -i my_droplet_ip, website.yml -e BUILD_VERSION=v1 -e BUILD_UPDATE=true -vvv
 
